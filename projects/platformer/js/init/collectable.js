@@ -14,7 +14,8 @@
     
     /**
      * init: Initialize all collectables.
-     * 
+     * https://simg.nicepng.com/png/small/168-1684303_orange-star-icon-diamond-icon-cute-star.png
+     * https://www.pngkit.com/png/full/323-3233944_sailor-moon-luna-luna-sailor-moon-pixel-art.png
      * GOAL: Add as many collectables as necessary to make your level challenging.
      * 
      * Use the createCollectable() Function to create collectables for the level.
@@ -37,9 +38,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
-        createCollectable(type.db, 200, 170, 6, 0.7);
-        createCollectable(type.db, 600, 100, 6, 0.7);
-        createCollectable(type.db, 600, 320, 6, 0.7);
+        createCollectable(type.grace, 200, 170, 6, 0.7);
+        createCollectable(type.grace, 600, 100, 6, 0.7);
+        createCollectable(type.grace, 600, 320, 6, 0.7);
         
         
         

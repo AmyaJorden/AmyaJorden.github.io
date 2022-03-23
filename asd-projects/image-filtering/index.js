@@ -4,7 +4,7 @@ $(document).ready(function(){
     const $display = $('#display');
 
     // Multiple TODOs: Call your apply function(s) here
-
+applyFilter();
 
 
 
@@ -17,15 +17,34 @@ $(document).ready(function(){
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2 & 4: Create the applyFilter function here
-
+function applyFilter(filterFunction){
+    for (var r = 0; r < image.length; r++){
+        for (var c =0; c <  image[r].length; c++){
+            rgbString = image[r][c];
+            var rgbNumbers = rgbStringToArray(rgbString);
+            filterFunction(rgbNumbers)
+            rgbString = rgbArrayToString(rgbNumbers)
+            image[r][c] = rgbString;
+        }
+    }
+}
 
 // TODO 7: Create the applyFilterNoBackground function
 
 
 // TODO 5: Create the keepInBounds function
-
+function keepInBounds(number){
+    var maxNumber = 225
+    var minNumber = 0
+    var numberVar = Math.max(number, minnumber)
+    return Math.min(numberVar, maxNumber)
+}
 
 // TODO 3: Create reddify function
+function reddify(array){
+    array[RED] = 200;
+}
+
 
 
 // TODO 6: Create more filter functions
